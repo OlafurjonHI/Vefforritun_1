@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<meta charset="utf-8">
+	<title>Vefforritun 1 - Verkefni 2 - Form</title>
+	<link rel="icon" href="../img/fav.png" type="image/gif" sizes="16x16">
+
+</head>
+<body>
+<form action="#" name="nyskraning" id="nyskraning" >
+	<fieldset>
+		<legend>Notandi:</legend>
+		<label for="username">Notendanafn:</label>
+			<input type="text" name="username" id="username" required>
+			 <br/>
+		<label for="email">Netfang:</label>
+			<input type="email" name="email" id="email" required>
+			<br/>
+		<label for="userPassword">Lykilorð: </label>
+			<input type="password" name="userPassword" id="userPassword"  required>
+			<br/>
+		<label for="userPassword2">Lykilorð aftur: </label>
+			<input type="password" name="userPassword2" id="userPassword2" required> 
+				<span>Lykilorð verða að vera eins</span>
+	<script src="../js/passval.js"></script><!--Þurfti að svindla með að hafa validation á milli þessa tvegga í Javascript, sá ekki beint neina innbyggða leið til að láta þá tala saman annað en að vera með sama pattern -->
+	</fieldset>
+	<fieldset>
+		<legend>Spurningar:</legend>
+		<br/>
+		<label>Kyn:</label>
+		<br/>
+		<input type="radio" name="kyn" id="kona" required>
+			<label for="kona">Kona</label>
+		<input type="radio" name="kyn" id="karl">
+			<label for="karl">Karl</label>
+		<input type="radio" name="kyn" id="annad">
+			<label for="kona">Annað</label>
+		<br/>
+		<label for="aldur">Aldur:</label>
+			<select name="aldur" id="aldur" required>
+				<option value="" disabled selected>-Vinsamlegast veljið-</option>
+				<option value="0-13">Yngri en 13 ára</option>
+				<option value="13-20">13-20 ára</option>
+				<option value="21-65">21-65 ára</option>
+				<option value="65+">Eldri en 65 ára</option>
+			</select>
+		<br/>
+		<input type="checkbox" name="cb_sendaafrit" id="cb_sendaafrit" checked>
+			<label for="cb_sendaafrit">Senda afrit af notandaupplýsingum á netfang.</label>
+		<br/>
+		<label for="athugasemdir">Athugasemdir</label>
+			<textarea rows="5" cols="25" name="athugasemdir" id="athugasemdir" form="nyskraning"></textarea>
+	</fieldset>
+	<button type="Submit">Senda</button>
+</form>
+
+	<ul>
+		<li><a href="../index.html">Forsíða</a></li>
+		<li><strong><a href="form.html">Form</a></strong></li>
+		<li><a href="table.html">Tafla</a></li>
+		<li><a href="text.html">Texti</a></li>
+	</ul>
+
+</body>
+</html>
