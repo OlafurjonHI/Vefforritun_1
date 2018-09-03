@@ -2,7 +2,7 @@
 GitRepo Fyrir Veforritun
 
 Mín slóð:
-https://notendur.hi.is/ojv1/vefforritun/
+https://notendur.hi.is/ojv1/
 
 Verkefni 1:
 https://github.com/vefforritun/vef1-2018-v1
