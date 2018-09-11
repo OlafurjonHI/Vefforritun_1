@@ -1,0 +1,136 @@
+
+/* almennar skilgreiningar */
+
+html body {
+	font-size: 18px;
+	width: 44.4em;
+}
+
+/* texti */
+
+h1{
+	font-size: 2em;
+	border-bottom: solid 1px #999;
+	margin-bottom: 2em;
+}
+h2{	
+	font-size: 1.6em;
+	margin: 0;
+	color:#999;
+}
+h3 {
+	font-size: 1em;
+	margin:0 0 0 0;
+}
+button{
+	border: 5px solid;
+	border-right-color: #999;
+	border-top-color: #999;
+	border-left-color: #666;
+	border-bottom-color:#666;
+	font-size: 1em; 	
+}
+button:hover{
+	border: 10px solid;
+	border-right-color: #666;
+	border-top-color: #666;
+	border-left-color: #999;
+	border-bottom-color:#999;
+}
+section>p:nth-child(2) /* Fyrsta Textablokk*/
+{
+	font-size: 1em;
+	margin-left: 0px;
+
+
+}
+section>p:nth-child(2)::first-line
+{
+	background-color: #ccc;
+}
+section>p:nth-child(3)/* Önnur Textablokk*/
+{
+	font-size: 0.8em;
+	margin-left: 2.7em;
+}
+section>p:nth-child(3)::first-line
+{
+	background-color: #ddd;
+}
+section>p:nth-child(4) /*Þriðja Textablokk*/
+{
+	font-size: 0.7em;
+	margin-left: 5.4em;
+
+}
+section p:nth-child(4)::first-line
+{
+	background-color: #eee;
+}
+
+section>p::first-letter /* Gildir fyrir fyrsta staf í öllum p sem eiga parent sem section */
+{
+	font-size: 2em;
+}
+
+/* cards */
+.card-section h2
+{
+	display: none;
+}
+.cards
+{
+	max-width: 37em;
+	margin:auto;
+	/*border-bottom: 1px solid #c00 ; Má kannski ekki? */
+
+}
+.cards>button
+{
+	margin-top: 2em;
+	margin-left: 13.5em;
+	margin-bottom: 2em;
+}
+
+main>section>.cards::after
+{	
+	margin:2em 0 2em 0;
+	content: "Ekki meira efni";
+	width: 37em;
+	border-top: 1px solid #c00 ;
+	display: inline-block;
+	padding-top: 1em;
+
+
+}
+
+
+.card
+{
+	width: 10em;
+	height: 10em;
+	margin: 0.5em;
+	padding: 0.5em; 
+	border:1px solid black;
+	display: inline-block;
+}
+.card:nth-child(even)
+{
+	background-color: #fff;
+	color: #333;	
+}
+.card:nth-child(odd)
+{
+	background-color: #333;
+	color: #fff;	
+}
+.cards:hover .card:nth-child(even)
+{
+	background-color: #333;
+	color: #fff;
+}
+.cards:hover .card:nth-child(odd)
+{
+	background-color: #fff; 
+	color: #333;
+}
