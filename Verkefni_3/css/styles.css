@@ -1,4 +1,13 @@
-
+/*Núlla út user agent stylesheet sem er að trufla mig */
+.card>p{
+	margin:0;
+}
+button{
+	background-color:white; /* replace-ar þennan svokallaða buttonface lit*/
+}
+p{
+	margin-top: 0px;
+}
 /* almennar skilgreiningar */
 
 html body {
@@ -11,7 +20,7 @@ html body {
 h1{
 	font-size: 2em; /* 2*18px = 36px */
 	border-bottom: solid 1px #999;
-	margin-bottom: 1em; /* 1*36px = 36px */
+	margin:0 0 1em 0; /* 1*36px = 36px */
 }
 h2{	
 	font-size: 1.666667em; /* 30/18 = 1.6 * 18px = ~30px */
@@ -112,22 +121,22 @@ main>section>.cards::after
 	border:1px solid black;
 	display: inline-block;
 }
-.card:nth-child(even)
+.card:nth-child(odd)
 {
 	background-color: #fff;
 	color: #333;	
 }
-.card:nth-child(odd)
+.card:nth-child(even)
 {
 	background-color: #333;
 	color: #fff;	
 }
-.cards:hover .card:nth-child(even)
+.cards:hover .card:nth-child(odd)
 {
 	background-color: #333;
 	color: #fff;
 }
-.cards:hover .card:nth-child(odd)
+.cards:hover .card:nth-child(even)
 {
 	background-color: #fff; 
 	color: #333;
