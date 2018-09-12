@@ -9,18 +9,18 @@ html body {
 /* texti */
 
 h1{
-	font-size: 2em;
+	font-size: 2em; /* 2*18px = 36px */
 	border-bottom: solid 1px #999;
-	margin-bottom: 2em;
+	margin-bottom: 1em; /* 1*36px = 36px */
 }
 h2{	
-	font-size: 1.6em;
+	font-size: 1.666667em; /* 30/18 = 1.6 * 18px = ~30px */
 	margin: 0;
 	color:#999;
 }
 h3 {
-	font-size: 1em;
-	margin:0 0 0 0;
+	font-size: 1em; /* 1*18 = 18px*/
+	margin:0;
 }
 button{
 	border: 5px solid;
@@ -28,7 +28,7 @@ button{
 	border-top-color: #999;
 	border-left-color: #666;
 	border-bottom-color:#666;
-	font-size: 1em; 	
+	font-size: 1em; /*1*18 = 18px */ 	
 }
 button:hover{
 	border: 10px solid;
@@ -39,10 +39,8 @@ button:hover{
 }
 section>p:nth-child(2) /* Fyrsta Textablokk*/
 {
-	font-size: 1em;
+	font-size: 1em; /* 1 * 18 = 18px */
 	margin-left: 0px;
-
-
 }
 section>p:nth-child(2)::first-line
 {
@@ -50,8 +48,8 @@ section>p:nth-child(2)::first-line
 }
 section>p:nth-child(3)/* Önnur Textablokk*/
 {
-	font-size: 0.8em;
-	margin-left: 2.7em;
+	font-size: 0.89em; /* 16/18 = 0.888888889 * 18 = ~ 16px */
+	margin-left: 3.13em; /* 50/16 3.125 * 16 ~ 50px; */
 }
 section>p:nth-child(3)::first-line
 {
@@ -59,8 +57,8 @@ section>p:nth-child(3)::first-line
 }
 section>p:nth-child(4) /*Þriðja Textablokk*/
 {
-	font-size: 0.7em;
-	margin-left: 5.4em;
+	font-size: 0.78em; /* 14/18 = 0.77777778 * 18 = ~ 14px; */
+	margin-left: 7.145em; /*100 / 14 = 7.142857..... * 14 = ~ 100px */
 
 }
 section p:nth-child(4)::first-line
@@ -70,7 +68,9 @@ section p:nth-child(4)::first-line
 
 section>p::first-letter /* Gildir fyrir fyrsta staf í öllum p sem eiga parent sem section */
 {
-	font-size: 2em;
+	font-size: 2rem; /* 2*18 = 36px passa að sé rem annars miðast þeir við parent elementið og eru misstórir */
+	/*Það stendur í verkefninu að megi bara nota em einingar  þannig ef þetta má ekki þá hefði ég geta bætt við first letter og gert 
+	þetta manually á allt hitt en þetta meikaði mest sense */
 }
 
 /* cards */
@@ -80,27 +80,25 @@ section>p::first-letter /* Gildir fyrir fyrsta staf í öllum p sem eiga parent 
 }
 .cards
 {
-	max-width: 37em;
-	margin:auto;
-	/*border-bottom: 1px solid #c00 ; Má kannski ekki? */
+	max-width: 37em; /* 37 * 18 = 666px */
+	margin:auto; /* miðjar elementið */
 
 }
 .cards>button
 {
 	margin-top: 2em;
-	margin-left: 13.5em;
+	margin-left: 13.9em; /* 66.59 + 666 = 732.59 - 135.063 = 597.525 / 18 */
 	margin-bottom: 2em;
 }
 
 main>section>.cards::after
 {	
-	margin:2em 0 2em 0;
+	margin:1em 0 1em 0;
 	content: "Ekki meira efni";
 	width: 37em;
 	border-top: 1px solid #c00 ;
 	display: inline-block;
 	padding-top: 1em;
-
 
 }
 
