@@ -12,7 +12,8 @@ p{
 
 html body {
 	font-size: 18px;
-	width: 44.4em;
+	max-width: 44.4em;	
+	
 }
 
 /* texti */
@@ -105,6 +106,7 @@ main>section>.cards::after
 	margin:1em 0 1em 0;
 	content: "Ekki meira efni";
 	width: 37em;
+
 	border-top: 1px solid #c00 ;
 	display: inline-block;
 	padding-top: 1em;
