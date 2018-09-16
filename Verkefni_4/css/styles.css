@@ -1,0 +1,227 @@
+
+/*Default CSSið sem við fengum "gefins" */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #ddd;
+}
+/* Default CSSið sem við fengum *gefins endar hér*/
+
+/* Fontin sem við eigum að nota */
+@font-face
+{
+	font-family: 'Merriweather-Regular';
+	src: url(../Fonts/Merriweather-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face
+{
+  font-family: 'Merriweather-Italic';
+  src: url(../Fonts/Merriweather-Italic.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face
+{
+  font-family: 'IM-Fell-DW-Pica';
+  src: url(../Fonts/IMFePIrm28P.ttf);
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+
+html body
+{
+	font-size: 28px;
+
+}
+h1
+{
+  font-family: IM-Fell-DW-Pica;
+}
+h2
+{
+  font-family: IM-Fell-DW-Pica;
+}
+/*Header*/
+header
+{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  position: relative;
+  text-align: center;
+  color: #333;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+header>h1
+{
+  padding-top:2em;
+  padding-left:1em;
+  padding-right: 1em;
+  font-size: 8vmax;
+}
+header>h2
+{
+  padding-top: 1em;
+  font-size: 4vmax;
+}
+
+header>p
+{
+  margin-top: 1em;
+  padding: 1em;
+  font-size: 5vmin;
+
+  text-transform: uppercase;
+}
+
+
+section>blockquote{
+  font-style: italic;
+  text-align:right;
+  padding: 2em;
+  line-height: 2;
+
+}
+section>blockquote>cite{
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+p
+{
+  font-family: 'Merriweather-Regular';
+  font-weight: 400;
+  padding: 1em;
+
+}
+
+/*Meginmál */
+section
+{
+  max-width: 50em;
+  margin: auto;
+  padding: 2em;
+}
+section>p
+{
+  line-height: 2;
+}
+blockquote + p:first-letter
+{
+  font-weight: bold;
+  font-size: 6em;
+  float: left;
+  margin-top: -0.5em;
+  margin-bottom: -0.6em;
+  padding-right: inherit;
+}
+section>p:first-child:first-letter
+{
+  font-weight: bold;
+  font-size: 6em;
+  float:left;
+  margin-top: -0.5em;
+  margin-bottom: -0.6em;
+  padding-right: inherit;
+}
+
+/*hr veislan */
+hr
+{
+  height: 60vh;
+  width: 100vw;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+hr:first-of-type
+{
+  background-image: url(../img/tree-fog.jpg);
+}
+hr:nth-of-type(2)
+{
+  background-image: url(../img/castle.jpg);
+}
+hr:nth-of-type(3)
+{
+  background-image: url(../img/hands.jpg);
+}
+hr:nth-of-type(4)
+{
+  background-image: url(../img/moon.jpg);
+}
+
+section:last-of-type::before
+{
+  content:"";
+  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  height: 60vh;
+  width: 100vw;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*section:last-of-type
+{
+  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  height: 60vh;
+  width: 100vw;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+footer
+{
+  background-color: rgba(255,255,255,1);
+  color:#333;
+
+}
+footer>p
+{
+  margin:0;
+  padding-bottom: 0;
+}
+ul
+{
+  padding:1em;
+  padding-top: 0;
+  list-style: none
+}
+p>a
+{
+  text-decoration: none;
+  color: #333;
+
+}
+li>a
+{
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
