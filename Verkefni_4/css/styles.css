@@ -63,31 +63,46 @@ header
 {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  background-image: url(../img/trees.jpg);
   position: relative;
   text-align: center;
   color: #333;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+
+  /*background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  position: relative;
+  text-align: center;
+  color: #333;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   skv. samtali við osk vill hann frekar að við splæsum í protection div tag frekar en að vera með gradient*/ 
+}
+.durex /*Er protection div tag fyrir myndina svo að textinn sjáist betur */
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.2);
 }
 
 
-header>h1
+.durex>h1
 {
   padding-top:2em;
   padding-left:1em;
   padding-right: 1em;
   font-size: 10vmin;
 }
-header>h2
+.durex>h2
 {
   padding-top: 1em;
   font-size: 6vmin;
 }
 
-header>p
+.durex>p
 {
   font-family: Merriweather-Regular;
   font-weight: 500;
@@ -217,7 +232,7 @@ hr:nth-of-type(4)
 }*/
 footer
 {
-  background-color: rgba(255,255,255,.8);/* Fóturinn í videoinu lookar smá gegnsær */
+  background-color: rgba(221,221,221,1);/* Fóturinn í videoinu lookar smá gegnsær */
   color:#333;
   max-width: 50em;
   margin:auto;
@@ -249,7 +264,7 @@ li>a
 .postscript
 {
 
-  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  background-image:url(../img/trees.jpg);
   margin:auto;
   position: sticky;
   left: 0;
@@ -264,14 +279,21 @@ li>a
   text-transform: uppercase;
   text-align: center;
 }
-.postscript>h2
+.postscript>div
+{
+
+  background-color: rgba(255,255,255,.2);
+  width: 100%;
+  height: 100%;
+}
+.postscript>div>h2
 {
   padding: 2em;
   padding-bottom: 2rem;
   font-size: 7vmin;
  
 }
-.postscript>p
+.postscript>div>p
 {
   padding: 2em;
   font-size: 4vmin ;
