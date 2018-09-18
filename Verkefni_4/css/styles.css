@@ -31,7 +31,7 @@ body {
 {
   font-family: 'Merriweather-Italic';
   src: url(../Fonts/Merriweather-Italic.ttf);
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
 }
 
@@ -79,28 +79,33 @@ header>h1
   padding-top:2em;
   padding-left:1em;
   padding-right: 1em;
-  font-size: 8vmax;
+  font-size: 10vmin;
 }
 header>h2
 {
   padding-top: 1em;
-  font-size: 4vmax;
+  font-size: 6vmin;
 }
 
 header>p
 {
+  font-family: Merriweather-Regular;
+  font-weight: 500;
   margin-top: 1em;
   padding: 1em;
-  font-size: 5vmin;
-
+  font-size: 4vmin;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 
 section>blockquote{
+  font-family: Merriweather-Italic;
   font-style: italic;
   text-align:right;
-  padding: 2em;
+  font-size: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   line-height: 2;
 
 }
@@ -113,6 +118,7 @@ p
 {
   font-family: 'Merriweather-Regular';
   font-weight: 400;
+  font-size: 1em;
   padding: 1em;
 
 }
@@ -127,6 +133,10 @@ section
 section>p
 {
   line-height: 2;
+}
+section>p + p
+{
+  text-indent: 2em;
 }
 blockquote + p:first-letter
 {
@@ -146,6 +156,15 @@ section>p:first-child:first-letter
   margin-bottom: -0.6em;
   padding-right: inherit;
 }
+.postscript + p:first-letter
+{
+  font-weight: bold;
+  font-size: 6em;
+  float: left;
+  margin-top: -0.5em;
+  margin-bottom: -0.6em;
+  padding-right: inherit;
+}
 
 /*hr veislan */
 hr
@@ -156,6 +175,7 @@ hr
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-style: none;
 
 }
 hr:first-of-type
@@ -175,12 +195,11 @@ hr:nth-of-type(4)
   background-image: url(../img/moon.jpg);
 }
 
-section:last-of-type::before
+/*section:last-of-type>h2
 {
   content:"";
   background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
-  height: 60vh;
-  width: 100vw;  
+  margin:auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,8 +217,10 @@ section:last-of-type::before
 }*/
 footer
 {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,.8);/* Fóturinn í videoinu lookar smá gegnsær */
   color:#333;
+  max-width: 50em;
+  margin:auto;
 
 }
 footer>p
@@ -224,4 +245,37 @@ li>a
   list-style: none;
   text-decoration: none;
   color: #333;
+}
+.postscript
+{
+
+  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),url(../img/trees.jpg);
+  margin:auto;
+  position: sticky;
+  left: 0;
+  right: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color:#333;
+  text-transform: uppercase;
+  text-align: center;
+}
+.postscript>h2
+{
+  padding: 2em;
+  padding-bottom: 2rem;
+  font-size: 7vmin;
+ 
+}
+.postscript>p
+{
+  padding: 2em;
+  font-size: 4vmin ;
+  font-weight: bold;
+
+
 }
