@@ -81,7 +81,7 @@ header
   background-repeat: no-repeat;
   background-size: cover;   skv. samtali við osk vill hann frekar að við splæsum í protection div tag frekar en að vera með gradient*/ 
 }
-.durex /*Er protection div tag fyrir myndina svo að textinn sjáist betur */
+.protection /*Er protection div tag fyrir myndina svo að textinn sjáist betur */
 {
   width: 100%;
   height: 100%;
@@ -89,20 +89,20 @@ header
 }
 
 
-.durex>h1
+.protection>h1
 {
   padding-top:2em;
   padding-left:1em;
   padding-right: 1em;
   font-size: 10vmin;
 }
-.durex>h2
+.protection>h2
 {
   padding-top: 1em;
   font-size: 6vmin;
 }
 
-.durex>p
+.protection>p
 {
   font-family: Merriweather-Regular;
   font-weight: 500;
@@ -143,7 +143,7 @@ section
 {
   max-width: 50em;
   margin: auto;
-  padding: 2em;
+
 }
 section>p
 {
