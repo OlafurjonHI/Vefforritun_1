@@ -34,6 +34,13 @@ body {
   font-style: italic;
   font-weight: 400;
 }
+@font-face
+{
+  font-family: 'Merriweather-Bold';
+  src: url(../Fonts/Merriweather-Bold.ttf);
+  font-style:normal;
+  font-weight: bold;
+}
 
 @font-face
 {
@@ -164,6 +171,7 @@ blockquote + p:first-letter
 }
 section>p:first-child:first-letter
 {
+  font-family: 'Merriweather-Bold';
   font-weight: bold;
   font-size: 6em;
   float:left;
@@ -173,6 +181,7 @@ section>p:first-child:first-letter
 }
 .postscript + p:first-letter
 {
+  font-family: 'Merriweather-Bold';
   font-weight: bold;
   font-size: 6em;
   float: left;
